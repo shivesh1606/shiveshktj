@@ -1,0 +1,880 @@
+body{
+    padding: 0;
+    margin: 0;
+    text-align: center; 
+    background-image: url("stars.png"),linear-gradient(#323232,#21094e)  ;
+    color: white;
+    font-family: 'KoHo', sans-serif;
+    overflow-x: hidden;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #393e46;
+    z-index: 5000;
+    padding: 5px 0;
+    border-radius: 5px;
+
+}
+nav .logo
+{
+    font-family: 'Niramit', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    padding: 0 5px;
+    text-transform:capitalize;
+    color:aliceblue;
+    
+    
+        
+    
+}
+nav ul
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    align-items: center;
+    width:60%;
+    padding: 0 5px;
+    
+}
+nav ul li
+{
+    list-style: none;
+    font-size: 1.2rem;
+    
+}
+nav a
+{
+    text-decoration: none;
+    color:aliceblue;
+    border-radius: 5px;
+}
+nav button
+{
+    text-decoration: none;
+    border-radius: 40px;
+    background: #f5f5f5;
+    opacity: 1;
+    padding: 5px 10px;
+    font-weight: 300;
+    border:none;
+    border-bottom: 2px solid white;
+    
+
+}
+nav button a
+{
+    color: black;
+}
+nav ul li a:hover,
+nav ul li a:active,
+nav ul li a:focus
+{
+    background: aliceblue;
+    color: #393e46;
+}
+.main
+{
+    margin-top: 35px;
+}
+.intro
+{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+}
+.intro .cover 
+{
+ 
+    width:50%;
+    height: 100%;
+    border-right: 5px solid gray;
+
+
+
+ 
+}
+.intro .name span h1
+{
+     background: 50% 100% / 50% 50% no-repeat
+radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+font-size: 7em;
+font-family: "Source Sans Pro", sans-serif;
+animation: reveal 3000ms ease-in-out forwards 200ms,
+   glow 2500ms linear infinite 2000ms;
+   margin-bottom: 120px;
+   margin-left: 50px;
+}
+@keyframes reveal {
+    80%{
+      letter-spacing: 8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @keyframes glow {
+    40% {
+      text-shadow: 0 0 8px #fff;
+    }
+  }
+#btn
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(-100px);
+}
+
+.intro .cover  img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+   
+
+    
+
+    
+}
+#heading 
+{
+    font-size: 4rem;
+    z-index: 50;
+    width: 100%;
+    position: relative;
+    font-family: 'Satisfy', cursive;
+    margin-bottom: -6px;
+
+    
+
+}
+.intro #heading
+{
+    font-family: 'Niramit', sans-serif;
+    text-shadow: none;
+}
+#subtitle
+{
+    font-size: 2rem;
+    z-index: 50;
+    color: whitesmoke;
+}
+.intro .cover img:hover {
+  
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+    
+}
+.intro .name
+{
+
+    border-radius: 50%;
+    padding: 0 5%;;
+    
+}
+
+
+.intro .name span 
+{
+    display: inline-block;
+    height: 100vh;
+    width: 100%;
+    
+    
+}
+
+
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to top,#1c0522,#fff);
+    z-index: 1000;
+    visibility: hidden;
+}
+.special
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    justify-content: space-between;
+}
+
+
+ .container
+{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    margin-top:5%; 
+    align-items: center;
+        margin-top:5%; 
+}
+.special .container
+{
+    margin: 280px 0;
+}
+.special .container .card
+{
+    position: relative;
+    top:-50px;
+    height: 300px;
+    width: 30%;
+    display: flex;
+    background: pink;
+    align-content: flex-end;
+    flex-direction: column;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    background: white;
+    justify-content: flex-end;
+    transition: 0.5s;
+    background:  linear-gradient(black,#141e30, #243b55)rgba(0,0,0,.1);
+}
+.special .container .card .img
+{
+    height: 100%;
+    z-index: 4;
+    background: yellow;
+    position: relative;
+    top: 200px;
+    transition: 0.3s;
+    flex-shrink: 1;
+    
+}
+.special .container .card .img img
+{
+   
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.special .container .card:hover{
+
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2); 
+    transform: scale(1.1);
+    transform: translateY(50px);
+
+}
+.special .container .card:hover .img
+{
+    transform: translateY(-200px);
+}
+.special .container .card .text
+{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px;
+    
+    max-height: 300px;
+    
+    
+}
+.container .row
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .price
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 10px 20px;
+  opacity: 0;
+ visibility: hidden;
+  transition: 0.1s;
+    align-content: center;
+    padding-top:10px; 
+}
+.special .container .card:hover .text .price
+{
+    opacity: 1;
+  visibility: visible;
+}
+ .container .row .Veg
+{
+       
+    width: 15px;
+}
+.container .row .top-text
+{
+    font-size:1.4rem;
+    font-weight: 600;
+    color: whitesmoke;
+}
+.container .row .Veg img
+{
+    object-fit: cover;
+    width: 100%;
+}
+.container .bottom-text
+{
+    font-size: 1.1rem;
+  font-weight: 600;
+  color: #e74c3c;
+  line-height: 1.2em;
+    padding: 10px 5px;
+    overflow: hidden;
+
+}
+.container .price button
+{
+    text-decoration: none;
+  background: #e1e5ea;
+    font-weight: 600;
+  color: forestgreen;
+  padding: 5px 8px;
+  border-radius: 30px;
+    border-color: forestgreen;
+  display: inline-flex;
+  transition: 0.2;
+    transform: scale(1.2);
+}
+ .container .price button:active , .container .price button:focus
+{
+    background: #4aa96c;
+    color: aliceblue;
+}
+.R .container
+{
+    flex-wrap: wrap;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+    margin: 20px 20px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background: linear-gradient(#b8b5ff,#ff005c,#fff);
+  color: white;
+  transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px;
+    justify-content: space-between;
+    
+}
+
+#search
+{
+    width: 22%;
+    margin-left: 60%;
+
+}
+#search input
+{
+
+    width: 0%;
+    visibility: hidden;
+    transition: 0.5s ease-in;
+}
+#search:hover
+{
+    transform: translateX(10%) scale(1.5);
+    
+}
+#search:hover input
+{
+    width: 80%;
+    visibility: visible;
+    border-radius: 50px;
+    border-color: transparent;
+    box-shadow:  1px 1px 12px #bebebe,
+             -1px -1px 12px #ffffff;
+}
+#search i
+{
+    color: #a5e1ad;
+    transform: scale(1.5);
+}
+.R .container .price
+{
+    visibility: visible;
+    opacity: 1;
+    background: transparent;
+}
+#R .flip-card-front img
+{
+    object-fit: cover;
+    width: 100%;
+}
+#R .container .bottom-text
+{
+    color:wheat;
+    font-family: sans-serif;
+}
+#R h1
+{
+    color: whitesmoke;
+}
+#R .price
+{
+    color: black;
+    font-weight: 700;
+}
+.show
+{
+    width: 50%;
+}
+
+.form
+{
+    width: 50%;
+}
+
+.login-box {
+
+  width: 100%;
+  padding: 40px;
+  background:  linear-gradient(#141e30, #243b55)rgba(0,0,0,.1);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+    text-align: left;
+}
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+    
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box a:hover,.login-box a:focus,login-box a:active {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+.show
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+}
+.show .card
+{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 400px;
+    justify-content: space-between;
+    margin: 20px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    transition: 0.4s;
+    padding-bottom: 5px;
+}
+.show .card .para
+{
+    overflow: hidden;
+    padding: 2px 10px;
+    margin-bottom: 20px;
+}
+.show .card:hover{
+    transform: scale(1.1);
+
+}
+
+.show .card:hover .name
+{
+    background: 50% 100% / 50% 50% no-repeat
+radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+font-family: "Source Sans Pro", sans-serif;
+animation: reveal 3000ms ease-in-out forwards 200ms,
+   glow 2500ms linear infinite 2000ms;
+    
+}
+#footer .container
+{
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    height: 20%;
+    margin: 0px 3px;
+    margin-top: 200px;
+
+    
+}
+#footer
+{
+    bottom: 0px;
+    height: 100%;
+    background-color: #393e46;
+    color: floralwhite;
+
+}
+
+#footer .container .row
+{
+    display: flex;
+    justify-content: space-around;
+    width: inherit;
+    padding: 0 auto;
+    height: 20vh;
+    
+    
+}
+#icon
+{
+    transform: scale(2);
+    
+}
+#footer .container div:nth-child(3)
+{
+    width: inherit;
+    color:white;
+    font-size: 1.2em;
+}
+#footer a
+{
+    text-decoration: none;
+    color:white;
+    font-size: 1.2em;
+}
+#footer .row:nth-child(2) a:nth-child(1) 
+{
+    color:dodgerblue;
+    
+}
+#footer .row:nth-child(2) a:nth-child(2) 
+{
+    color: #fb39a1;
+    
+}
+#footer .row:nth-child(2) a:nth-child(3) 
+{
+    color: lightseagreen;
+    
+}
+
+#footer .row:nth-child(2) a:nth-child(4) 
+{
+    color: blueviolet;
+    
+}
+.fa-star::before
+{
+    color: lightsalmon;
+    transition: 0.4s;
+    
+}
+
+.fa-star:hover{
+    transform: rotate(90deg);
+
+}
+.fa-quote-left::before
+{
+    color: aliceblue;
+}
+
+
+#review .card .img
+{
+    height: 100px;
+    padding: 0 auto;
+}
+#review .show .card .img img
+{
+    object-fit: cover;
+    height: 100%;
+    border-radius: 50%;
+}
+.show .card .img
+{
+    width:100%;
+}
+.show .card .img img
+{
+    object-fit: cover;
+    width: 40%;
+}
+.fa-smile
+{
+    color: #fdca40; 
+    
+}
+@keyframes animate1
+{
+    
+    0%{
+        transform: rotateZ(00deg);
+    }
+    50%
+    {
+        transform: rotateZ(180deg);
+    }
+    100%
+    {
+        transform: rotateZ(360deg);
+    }
+}
+.form .login-box h2:hover .fa-smile
+{
+    animation: animate1 1.5s linear ;
+}
+@media only screen and (max-width: 768px) {
+ 
+    body
+    {
+
+        text-align: center;
+    }
+    .special .container
+    {
+        flex-direction: column;
+        margin: 70px 0;
+    }
+    .special .container .card
+    {
+        margin: 65px 0; 
+        width: 300px;
+        height: 305px;    }
+    .intro
+    {
+        margin-top: 50px
+    }
+    .intro .name
+    {
+        width: 100vw;
+        padding: 0 0;
+    }
+    .intro .cover
+    {
+        position: absolute;
+        width:100%;
+        opacity: 0.5;
+    }
+    .intro .cover .name
+    {
+        text-align: center;
+    }
+    #review .container
+    {
+        flex-direction: column;
+    }
+    #footer .container .row
+    {
+        height:13vh;
+    }
+    .form
+    {
+        width: 100%;
+    }
+    .show
+    {
+        width: 150%;
+        margin: 0 auto;
+        overflow-x: scroll;
+    }
+    .show {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+    .show::-webkit-scrollbar {
+    display: none;
+}
+    .intro .name span #heading
+    {
+        font-size: 5rem;
+    }
+    .intro h2
+    {
+        font-size: 2.5rem;
+    }
+    nav
+    {
+        flex-wrap: wrap;
+    }
+    nav ul
+    {
+        width: 100%;
+    }
+}
+hr{
+  display: inline-block;
+  border-style: none;
+  border-top: dotted;
+  border-color: #c8c2bc;
+  border-width: 8px;
+  width: 5%;
+
+}
