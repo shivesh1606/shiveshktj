@@ -879,6 +879,7 @@ animation: reveal 3000ms ease-in-out forwards 200ms,
     .intro .name span #heading
     {
         font-size: 5rem;
+        margin-left: 0px;
     }
     .intro h2
     {

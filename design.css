@@ -26,7 +26,6 @@ nav
     padding: 5px 0;
     border-radius: 5px;
     flex-wrap: wrap;
-
 }
 nav .logo
 {
@@ -852,6 +851,7 @@ animation: reveal 3000ms ease-in-out forwards 200ms,
         opacity: 0.4;
         background: black;
     }
+    
     .intro .cover .name
     {
         text-align: center;
@@ -868,10 +868,15 @@ animation: reveal 3000ms ease-in-out forwards 200ms,
     {
         width: 100%;
     }
+    nav
+    {
+        flex-wrap: wrap;
+    }
     nav ul
     {
         width: 100%;
     }
+
     .form
     {
         width: 100%;
@@ -886,7 +891,7 @@ animation: reveal 3000ms ease-in-out forwards 200ms,
     }
     .intro .name span #heading
     {
-        margin-left: none;
+        margin-left: 0px;
         font-size: 5rem;
     }
     .intro h2
