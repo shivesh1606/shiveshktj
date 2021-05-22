@@ -211,17 +211,7 @@ animation: reveal 3000ms ease-in-out forwards 200ms,
 }
 
 
-section::before
-{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 10px;
-    background: linear-gradient(to top,#1c0522,#fff);
-    z-index: 1000;
-    visibility: hidden;
-}
+
 .special
 {
     display: flex;
@@ -822,7 +812,7 @@ animation: reveal 3000ms ease-in-out forwards 200ms,
  
     body
     {
-        overflow-x: visible;
+        overflow-x: hidden;
         text-align: center;
     }
     .special .container
@@ -871,7 +861,7 @@ animation: reveal 3000ms ease-in-out forwards 200ms,
     nav
     {
         flex-wrap: wrap;
-        width: 100vw;
+        width: 100%;
     }
     nav ul
     {
